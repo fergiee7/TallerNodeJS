@@ -11,9 +11,9 @@ app.get('/', (req, res) => {
   res.send(`Hello World from Port ${port}`);
 });
 
-app.get('/myname', (req, res) => {
-  const name = req.query.name;
-  res.send(`Hello World! My name is ${name}`);
+app.get('/myName', (req, res) => {
+  const name = 'Fernanda'; // Reemplaza 'Tu Nombre' con tu nombre
+  res.send(`¡Hola Mundo! Mi nombre es ${name}`);
 });
 
 app.listen(port, () => {
